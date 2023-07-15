@@ -1,4 +1,4 @@
-
+"""
 rcb ="win"
 if (rcb =="win"):
     print("RCB won the match")
@@ -10,22 +10,20 @@ if (user.lower() == "died"):
     print("Surya Meets Priya")
 else:
     print("Surya weds Megna ")
-
+#find pass orfail
 mark = int(input("Enter Your Mark: "))
 if mark >=35:
     print("You passed :)")
 else:
     print("Sorry! You Failed :|")
 
-    
+#find eligibloity of scholarship:
 income= int(input("Enter your Income: "))
 if income >= 7000:
     print("Your are Not Eligible for scholarship")
 else:
     print("Your are Eligible for scholarship")
-
-
-
+# find a num is divisibile by 3
 a = int(input("Enter a number"))
 if a%3 == 0:
     print("the number is divisible by 3")
@@ -69,3 +67,22 @@ elif option.lower() == "div":
     print(a/b)
 else:
     print("Enter Valid Option")
+
+# getscore and eligiblity
+score = int(input("Enter Your Mark: "))
+if score >70:
+    name=input("Enter Your Name: ")
+    dept=input("Enter Your Department: ")
+    loct=input("Enterb Your Location: ")
+    print("You're Eligible")
+else:
+    print("You're not Eligible")
+"""
+#get salery and age. and eligibility for loan
+salery = int(input("Enter your Salery: "))
+age = int(input("Enter your Age: "))
+if (salery >= 20000) or (age <= 25):
+    loan_amt =int(input("Enter Required Loan Amount: "))
+    print("Your ELigibile for Loan")
+else:
+    print("Sorry! Your Not ELigible :|")
