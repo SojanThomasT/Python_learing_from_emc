@@ -1,4 +1,4 @@
-"""
+
 rcb ="win"
 if (rcb =="win"):
     print("RCB won the match")
@@ -77,12 +77,29 @@ if score >70:
     print("You're Eligible")
 else:
     print("You're not Eligible")
-"""
+ 
+    
 #get salery and age. and eligibility for loan
 salery = int(input("Enter your Salery: "))
 age = int(input("Enter your Age: "))
 if (salery >= 20000) or (age <= 25):
     loan_amt =int(input("Enter Required Loan Amount: "))
-    print("Your ELigibile for Loan")
+    if loan_amt <=50000:
+        print("Your ELigibile for Loan")
+    else:
+        print("Maximum Loan Amount is Rs:50000/- only")
 else:
     print("Sorry! Your Not ELigible :|")
+
+mark1=int(input())
+mark2=int(input())
+mark3=int(input())
+mark4=int(input())
+mark5=int(input())
+total= mark1+mark2+mark3+mark4+mark5
+average= total/5
+print(average)
+if average<35:
+    print("Additional class is required")
+else:
+    print("You are Good to Go")
