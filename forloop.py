@@ -135,7 +135,10 @@ for i in a:
     sum+=i
 print(sum)
 print("average is",str(sum/n))
-"""
-    
+
+# write a program to find a cube of a number:
+num=int(input())
+for i in range(1, num+1):
+    print("the number is ",str(i)," and the cube is ", str(i**3))
 
 #Write a Python program to concatenate all the strings in a list using a for loop
