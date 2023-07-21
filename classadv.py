@@ -1,4 +1,4 @@
-
+"""
 class laptop:
     def __init__(self,price,ram,processor):
         self.price=price
@@ -120,3 +120,34 @@ s2=phone("X1002",25000)
 my_list=[s1,s2]
 for i in my_list:
     print(i.display("samsung"))
+"""
+class phone:
+    charger_type="C-Type"
+    def __init__(self):
+        self.brand=""
+        self.price=12000
+    def set_price(self,price):
+        self.price=price
+    def get_price(self):
+        print(self.price)
+        print(self.brand,self.price,self.charger_type)
+    #declaring class variable
+    @classmethod
+    def set_charger_type(cls):
+        cls.charger_type="p-Type"
+        print("charger type changed")
+    @staticmethod # to avoid self variable
+    def info():
+        print("this is a information page")
+
+
+#declaring object:
+hp=phone()
+hp.get_price()
+hp.set_price(23000)
+hp.get_price()
+hp.set_charger_type()
+hp.get_price()
+phone.set_charger_type() #getting error as saying declaring class
+#phone.set_charger_type(phone) # to avoid redclaring the objec nam ewe are using @
+hp.info()
