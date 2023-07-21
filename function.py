@@ -1,4 +1,4 @@
-
+"""
 #write a function to add, sub, mul, div:
 #then get input from user
 #defining function
@@ -15,8 +15,7 @@ a=int(input())
 b=int(input())
 option=input("do u want to add or substract or multiply or divide: ")
 if option.lower() == "add":
-    sum(a,b)
-elif option.lower() == "substract":
+    sum(a,b)elif option.lower() == "substract":
     sub(a,b)
 elif option.lower() == "multiply":
     mul(a,b)
@@ -113,5 +112,42 @@ print("TOTAL AMOUNT TO BE PAID IS : ", Total_Amount)
 print("TOTAL NUMBER OF EMI IS: ", EMI)
 print("DUE AMOUNT IS: ",Due_Amount)
 
+#write a function to find a factiorial of given number:
+def factorial(num):
+    global initial
+    initial=1
+    while num >=1:
+        initial=initial*num
+        num-=1
+    #return initial
 
+factorial(5)
+print(initial)
 
+#check for validation
+
+s_user_name = "sojan thomas"
+s_password = "1234"
+name=input("Enter UserName: ")
+password=input("Enter Password :")
+
+def validation():
+    if (s_user_name == name.lower()) and (s_password == password):
+        return True
+    else:
+        return False
+    
+print(validation())
+"""
+#(a+b)*c
+num1=int(input())
+num2=int(input())
+num3=int(input())
+def add(a,b):
+    return a+b
+def mul(a,b):
+    return a*b
+x=add(num1,num2)
+print("addition is",x)
+y=mul(x,num3)
+print("multiplication is",y)
