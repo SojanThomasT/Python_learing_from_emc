@@ -1,4 +1,4 @@
-"""
+
 class laptop:
     def __init__(self,price,ram,processor):
         self.price=price
@@ -102,7 +102,7 @@ s6=calculator(2,3,"AMN")
 my_list=[s1,s2,s3,s4,s5,s6]
 for i in my_list:
     print(i.calculate())
-"""
+
 
 class phone:
     charger="C-Type" #class variable

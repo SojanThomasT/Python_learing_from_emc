@@ -1,4 +1,4 @@
-"""
+
 #write a function to add, sub, mul, div:
 #then get input from user
 #defining function
@@ -138,7 +138,7 @@ def validation():
         return False
     
 print(validation())
-"""
+
 #(a+b)*c
 num1=int(input())
 num2=int(input())
